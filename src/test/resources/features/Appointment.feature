@@ -15,7 +15,7 @@ Feature: Appointment Management
 
     Examples: 
       | petName | ownerName | date       | time  | symptoms             |
-      | Rex     | John      | 03-06-2023 | 10:00 | fever,cough,stomache |
+      | Rex     | John      | 13-06-2023 | 10:00 | fever,cough,stomache |
 
   @addSameAppointment
   Scenario Outline: add second appointment with the same data
@@ -32,7 +32,7 @@ Feature: Appointment Management
 
     Examples: 
       | petName | ownerName | date       | time  | symptoms             |
-      | Rex     | John      | 03-06-2023 | 10:00 | fever,cough,stomache |
+      | Rex     | John      | 13-06-2023 | 10:00 | fever,cough,stomache |
 
   @addAppointmentPastDate
   Scenario Outline: add appointment with the past date
@@ -60,7 +60,7 @@ Feature: Appointment Management
 
     Examples: 
       | petName | ownerName | date       | time  | symptoms             |
-      | Pops    | Rick      | 03-06-2023 | 03:00 | fever,cough,stomache |
+      | Pops    | Rick      | 13-06-2023 | 03:00 | fever,cough,stomache |
 
   @deleteAppointment
   Scenario Outline: delete appointment
@@ -77,4 +77,4 @@ Feature: Appointment Management
 
     Examples: 
       | petName | ownerName | date       | time  | symptoms             |
-      | Rex     | John      | 03-06-2023 | 10:00 | fever,cough,stomache |
+      | Rex     | John      | 13-06-2023 | 10:00 | fever,cough,stomache |

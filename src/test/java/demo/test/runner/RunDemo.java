@@ -9,9 +9,9 @@ import net.thucydides.core.util.EnvironmentVariables;
 
 @RunWith(RunPersonalizar.class)
 
-@CucumberOptions(features = { "src/test/resources/features/" }, tags = "@addAppointmentOutWrkHours", glue = { "demo" }, plugin = {
-		"pretty", "html:target/serenity-reports/serenity-html-report",
-		"json:target/serenity-reports/cucumber_report.json", "rerun:target/serenity-reports/rerun.txt" })
+//@CucumberOptions(features = { "src/test/resources/features/" }, tags = "@addAppointmentOutWrkHours", glue = { "demo" }, plugin = {
+//		"pretty", "html:target/serenity-reports/serenity-html-report",
+//		"json:target/serenity-reports/cucumber_report.json", "rerun:target/serenity-reports/rerun.txt" })
 
 public class RunDemo {
 

@@ -32,7 +32,7 @@ pipeline {
         			try {
         				sauce('saucelabs-Web-US') {
     						sauceconnect(useGeneratedTunnelIdentifier: true, verboseLogging: true) {
-		        				sh ("mvn test -Denvironment=run_with_saucelabs -Dcucumber.features=src/test/resources/features/ -Dcucumber.filter.tags=${ESCENARIO} -Dcucumber.plugin=json:target/site/result.json -Dcucumber.glue=demo")
+		        				sh ("mvn test -Denvironment=local_chrome -Dcucumber.features=src/test/resources/features/ -Dcucumber.filter.tags=${ESCENARIO} -Dcucumber.plugin=json:target/site/result.json -Dcucumber.glue=demo")
 		        			}
 		        		}
         			}

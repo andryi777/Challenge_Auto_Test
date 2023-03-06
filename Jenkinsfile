@@ -22,7 +22,6 @@ pipeline {
 	
         stage ('Build') {
             steps {
-            	sh ("chmod +x ${env.WORKSPACE}/src/test/resources/driver/chromedriver")
                 sh ("mvn -X clean verify")
             }
         }
